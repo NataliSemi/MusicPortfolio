@@ -17,10 +17,10 @@
           <nav>
             <h1 id="logo">Yurii Buzilov</h1>
             <ul class="nav-links">
-              <li>Home</li>
-              <li>About</li>
-              <li>Gallery</li>
-              <li>Contact</li>
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#roles">Roles</a> </li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
           <h2 class="big-text">Yurii Buzilov</h2>
@@ -42,10 +42,11 @@
       </div>
 
       <!-- About Section -->
-        <div class="content ">
-          <div class="column is-12">
+      <section id="about">
         <h2>About</h2>
-        <p>Vivamus imperdiet eros ut dolor eleifend pellentesque. 
+        <div class="content-about">
+        <p>
+          Vivamus imperdiet eros ut dolor eleifend pellentesque. 
           Cras sed purus justo. Praesent ut tellus laoreet nulla 
           vulputate finibus ac a urna. Maecenas ac aliquam turpis, 
           vel fermentum erat. Nunc rhoncus, lectus in interdum egestas, 
@@ -57,18 +58,50 @@
           justo commodo rhoncus in a lorem. Nam at imperdiet nisi. 
           Nulla cursus eu ligula vel lobortis. 
       </p>
-    </div>
-</div>
+      <div class="avatar">
+        <img src="static/images/avatar.png" alt="">
+      </div>
+        </div>
+        
 
-<div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-content">
-    <p class="image is-4by3">
-      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
-    </p>
-  </div>
-  <button class="modal-close is-large" aria-label="close"></button>
-</div>
+    </section>
+    <section id="roles">
+      <div class="musicien">
+        <a href="">
+          <h3>Musician</h3>
+        </a>
+        <a href="">
+          <img src="static/images/music.jpg" alt="">
+        </a>
+      </div>
+        <div class="arranger">
+          <a href="">
+            <h3>Arranger</h3>
+          </a>
+          <a href="">
+            <img src="static/images/arranger.jpg" alt="">
+          </a>
+        </div>
+        <div class="bandleader">
+          <a href="">
+            <h3>Bandleader</h3>
+          </a>
+          <a href="">
+            <img src="static/images/bandleader.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="voiceover">
+        <a href="/voiceover">
+          <h3>Voiceover</h3>
+        </a>
+        <a href="/voiceover">
+          <img src="static/images/voiceover.jpg" alt="">
+        </a>
+
+      </div>
+    </section>
+
 </body>
   <footer>
     <div class="footer-wrapper">
