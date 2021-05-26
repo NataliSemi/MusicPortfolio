@@ -378,7 +378,7 @@ footer ul {
   }
 }
 
-@media screen and (max-width: 1332px) {
+@media screen and (max-width: 600px) {
   .landing {
     min-height: 30vh;
     background: url("images/pexels-pixabay-316093.jpg"), rgba(0, 0, 0, 0.9);
@@ -447,10 +447,8 @@ footer ul {
   .contact img {
     width: 10vh;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 20rem;
-            flex: 1 1 20rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -313,7 +313,7 @@ footer h5{
 }
 }
 
-@media screen and (max-width: 1332px) {
+@media screen and (max-width: 600px) {
   .landing {
     min-height: 30vh;
     background: url("images/pexels-pixabay-316093.jpg"),
@@ -384,8 +384,7 @@ footer h5{
 
   .contact img{
     width: 10vh;
-    flex: 1 1 20rem;
-    object-fit: cover;
+    flex: 1 1 40rem;
   }
   
 
