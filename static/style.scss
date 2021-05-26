@@ -22,8 +22,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-height: 10vh;
-  background: linear-gradient(#2b2c31, #ffffff);
+  background: linear-gradient(rgba(0,0,0,0.8), transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#8d8d8d));
+  background: linear-gradient(#ffffff, #f1f1f1, #3d3d3d);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
