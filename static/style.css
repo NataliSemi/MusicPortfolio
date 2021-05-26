@@ -366,4 +366,31 @@ footer ul {
     padding-bottom: 3rem;
   }
 }
+
+@media screen and (max-width: 1332px) {
+  .landing {
+    min-height: auto;
+    background: url("images/pexels-pixabay-316093.jpg"), rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    padding: 0rem 5rem;
+  }
+  #about {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    display: flexbox;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .avatar img {
+    width: 40px;
+    height: 40px;
+  }
+  #contact {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
 /*# sourceMappingURL=style.css.map */
