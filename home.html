@@ -1,29 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/css/bulma.css">
-    
-</head>
-<body>
-    <div class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-          <header class="modal-card-head">
-            <p class="modal-card-title">Modal title</p>
-            <button class="delete" aria-label="close"></button>
-          </header>
-          <section class="modal-card-body">
-            <img src="images/avatar.png" alt="">
-          </section>
-          <footer class="modal-card-foot">
-            <button class="button is-success">Save changes</button>
-            <button class="button">Cancel</button>
-          </footer>
+{% extends "base.html" %}
+
+{% block title %}
+Music
+{% endblock %}
+
+ {% block content %}
+
+<div class="container">
+    <div class="row">
+        <h1>Music</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col">
+            <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" src="https://youtu.be/JYVMnLUZu9Y"></iframe>
+              </div>
+              
+              <!-- 16:9 aspect ratio -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://youtu.be/JYVMnLUZu9Y"></iframe>
+              </div>
         </div>
-      </div>
-</body>
-</html>
+
+        <div class="row align-items-start">
+            <div class="col">
+          <!-- 4:3 aspect ratio -->
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://youtu.be/JYVMnLUZu9Y"></iframe>
+                </div>
+            </div>
+        </div>
+          
+          <!-- 1:1 aspect ratio -->
+          <div class="embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" src="https://youtu.be/JYVMnLUZu9Y"></iframe>
+          </div>
+    </div>
+</div>
+
+ {%- endblock %}

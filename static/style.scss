@@ -12,7 +12,7 @@ main {
 
 .landing {
   min-height: 100vh;
-  background: url("images/city.jpg"),
+  background: url("images/pexels-pixabay-316093.jpg"),
   rgba(0, 0, 0, 0.9);
   background-size: cover;
   padding: 0rem 5rem;
@@ -27,13 +27,15 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
+
 a{
   text-decoration: none;
 }
 
 a:hover{
-  -webkit-box-shadow: #000;
-  box-shadow: 0px 16px 16px 0px;
+  color: white;
+  background-color: rgba(78, 78, 248, 0.1);
+  box-shadow: 0px 0px 0px 10px rgba(78, 78, 248, 0.1);
 }
 
 
@@ -54,20 +56,24 @@ a:hover{
 }
 
 .big-text {
-  
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -30%);
   font-size: 5rem;
   font-family: "Lobster", cursive;
-  color:#ffffff;
-
-
+  
 }
+
+
 .big-text h2{
-  -webkit-text-fill-color: linear-gradient(#ededf0, #2b2d3b, #2b2d3b, #ededf0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#37414d));
+  background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .small-text {
   position: absolute;
   top: 25%;
@@ -77,6 +83,12 @@ a:hover{
   font-family: "Lobster", cursive;
   color:white;
 
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro {
@@ -137,13 +149,14 @@ a:hover{
 }
 
 img:hover {
-  box-shadow: 0 0 4px 4px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.5);
 }
 
 #about h2 {
   text-align: center;
   color: white;
   font-size: 2rem;
+  font-family: "Heebo", sans-serif;
 }
 
 
@@ -165,50 +178,91 @@ img:hover {
 #roles {
   background: #000806;
   display: grid;
+  min-height: 100vh;
   grid-template-columns: repeat(3, 1fr);
-  // gap: 10px;
-  // grid-auto-rows: minmax(100px, auto);
-  justify-content: space-around;
-  justify-items: center;
+  position: relative;
   padding: 2rem;
+  font-family: "Heebo", sans-serif;
+
 }
 
 #roles h3{
   color: white;
   text-align: center;
+  font-size: 2rem;
+}
+
+#roles a:hover{
+  -webkit-box-shadow: #000;
+  box-shadow: 0px 16px 16px 0px;
 }
 
 #roles img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.role1 {
+  grid-column: 1/3;
+}
+
+.role3 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+#contact{
+  background: black;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Heebo", sans-serif;
+  color: white;
+}
+
+.form-wrapper{
+  flex: 3 1 40rem;
+}
+
+.form-wrapper h2{
+  text-align: center;
+}
+
+.form-wrapper span {
+  font-size: 2rem;
+  color: white;
+}
+
+.form-wrapper label{
+  display: block;
+}
+
+.form-wrapper input{
+  display: block;
+  margin: 3rem 0rem;
+  background: linear-gradient(rgb(228, 202, 202), rgb(225, 232, 252));
+  border: none;
+  padding: 1rem;
+}
+
+.form-wrapper button{
+  padding: 1rem 8rem;
+  border: none;
+  width: 100%;
+  background: linear-gradient(rgb(228, 202, 202), rgb(225, 232, 252));
+}
+
+.contact img{
   width: 60vh;
-}
-
-.musicien {
-  grid-column: 1 / 3;
-  grid-row: 1;
-}
-
-.arranger {
-  grid-column: 2 / 4;
-  grid-row: 1 / 3;
-  row-gap: 10px;
-}
-
-.bandleader {
-  grid-column: 1 / 3;
-  grid-row: 2;
-}
-
-.voiceover{
-  row-gap: 10px;
-  grid-column: 2 / 4;
-  grid-row: 2;
-
+  flex: 1 1 40rem;
+  object-fit: cover;
 }
 
 
 footer{
   color: white;
-  background: rgba(19, 28, 39, 1);
+  background: linear-gradient(rgb(92, 92, 92), rgb(0, 0, 0));
 }
 
 .footer-wrapper {
