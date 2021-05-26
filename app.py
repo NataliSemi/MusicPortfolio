@@ -1,9 +1,10 @@
 from flask import Flask
 from flask import render_template
-from flask_bootstrap import Bootstrap
+
 
 app = Flask(__name__,template_folder='templates')
-bootstrap = Bootstrap(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
+db = SQLAlchemy(app)
 
 
 
@@ -28,3 +29,7 @@ def voiceover():
 @app.route("/bandleader")
 def bandleader():
     return render_template('bandleader.html')
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
