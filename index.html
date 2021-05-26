@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="static/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
       rel="stylesheet"
     />
+    
     <title>Yurii Buzilov</title>
   </head>
 <body>
@@ -16,10 +17,10 @@
           <nav>
             <h1 id="logo">Yurii Buzilov</h1>
             <ul class="nav-links">
-              <li>Home</li>
-              <li>About</li>
-              <li>Gallery</li>
-              <li>Contact</li>
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#roles">Roles</a> </li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
           <h2 class="big-text">Yurii Buzilov</h2>
@@ -43,7 +44,9 @@
       <!-- About Section -->
       <section id="about">
         <h2>About</h2>
-        <p>Vivamus imperdiet eros ut dolor eleifend pellentesque. 
+        <div class="content-about">
+        <p>
+          Vivamus imperdiet eros ut dolor eleifend pellentesque. 
           Cras sed purus justo. Praesent ut tellus laoreet nulla 
           vulputate finibus ac a urna. Maecenas ac aliquam turpis, 
           vel fermentum erat. Nunc rhoncus, lectus in interdum egestas, 
@@ -55,42 +58,51 @@
           justo commodo rhoncus in a lorem. Nam at imperdiet nisi. 
           Nulla cursus eu ligula vel lobortis. 
       </p>
-      </section>
-
-
-      <!-- Portfolio -->
-      <section id="portfolio">
-      <h2>Gallery</h2>
-      <div class="gallery">
-
-        <div class="img-container">
-            <img src="./images/Backer.png" 
-            alt="This is a flock of birds"
-            data-original="Backer.png"
-            >
-            </div>
-            <div class="img-container">
-              <img src="./images/Bergonzi.jpg" 
-              alt="This is a flock of birds"
-              data-original="Bergonzi.jpg"
-            >
-            </div>
-            <div class="img-container">
-                <img src="./images/KennyVerner.jpg" alt=""
-                alt=This is a flock of birds
-                data-original="Backer.png"
-                >
-             </div>
+      <div class="avatar">
+        <img src="static/images/avatar.png" alt="">
       </div>
-      <div class="modal">
-        <img src="./images/Bergonzi.jpg" alt="" class="full-image">
-        <p class="caption">Ggg dfhdsjfhdb hdfd</p>
-    </div>
-  </section>
+        </div>
+        
 
-  <section id="contact">
+    </section>
+    <section id="roles">
+      <div class="musicien">
+        <a href="">
+          <h3>Musician</h3>
+        </a>
+        <a href="">
+          <img src="static/images/music.jpg" alt="">
+        </a>
+      </div>
+        <div class="arranger">
+          <a href="">
+            <h3>Arranger</h3>
+          </a>
+          <a href="">
+            <img src="static/images/arranger.jpg" alt="">
+          </a>
+        </div>
+        <div class="bandleader">
+          <a href="">
+            <h3>Bandleader</h3>
+          </a>
+          <a href="">
+            <img src="static/images/bandleader.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="voiceover">
+        <a href="/voiceover">
+          <h3>Voiceover</h3>
+        </a>
+        <a href="/voiceover">
+          <img src="static/images/voiceover.jpg" alt="">
+        </a>
 
-  </section>
+      </div>
+    </section>
+
+</body>
   <footer>
     <div class="footer-wrapper">
         <h4>Yurii Buzilov &copy;</h5>
@@ -118,13 +130,12 @@
     </div>
 </footer>
       <div class="slider"></div>
-
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"
       ></script>
-      <script src="app.js"></script>
-     </body>
+      <script src="static/app.js"></script>
+
      </html>
      
