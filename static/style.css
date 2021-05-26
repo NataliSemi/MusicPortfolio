@@ -369,10 +369,39 @@ footer ul {
 
 @media screen and (max-width: 1332px) {
   .landing {
-    min-height: auto;
+    min-height: 30vh;
     background: url("images/pexels-pixabay-316093.jpg"), rgba(0, 0, 0, 0.9);
     background-size: cover;
     padding: 0rem 5rem;
+    font-size: 1.5rem;
+  }
+  .big-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-family: "Lobster", cursive;
+  }
+  .big-text h2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(transparent));
+    background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .small-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+    font-size: 2rem;
+    font-family: "Lobster", cursive;
+    color: white;
   }
   #about {
     width: auto;
@@ -391,6 +420,11 @@ footer ul {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
+  }
+  .form-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
