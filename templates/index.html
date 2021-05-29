@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/ico" href="static/favicon.ico"/>
+<link rel="icon" type="image/ico" href="static/favicon.ico"/>
+
+    <meta name="robots" content="index,follow">
+    <title>Yurii Buzilov</title>
+  </head>
+<body>
+      <main>
+        <section class="landing">
+          <audio controls autoplay muted>
+            <source src="static/PerryMason.mp3" type="audio/mpeg">
+          </audio>
+          <nav>
+            <h1 id="logo"><a href="/">Yurii Buzilov</a></h1>
+            <ul class="nav-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#roles">Roles</a></li>
+
+            </ul>
+          </nav>
+          <h2 class="big-text">Yurii Buzilov</h2>
+          <h4 class="small-text">Genius, ̶b̶i̶l̶l̶i̶o̶n̶a̶i̶r̶e̶, playboy, philanthropist :)</h4>
+        </section>
+
+      </main>
+      <div class="intro">
+        <div class="intro-text">
+          <h1 class="hide">
+            <span class="text">Creating, Creating</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text">Creating</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text">Everyday</span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2>About</h2>
+        <div class="content-about">
+        <p>
+          Vivamus imperdiet eros ut dolor eleifend pellentesque. 
+          Cras sed purus justo. Praesent ut tellus laoreet nulla 
+          vulputate finibus ac a urna. Maecenas ac aliquam turpis, 
+          vel fermentum erat. Nunc rhoncus, lectus in interdum egestas, 
+          augue lectus ornare turpis, et accumsan dui leo eget mauris. 
+          Nunc fermentum tempor ligula at interdum. Suspendisse nunc 
+          nulla, accumsan sit amet tempor at, tempus et velit. 
+          In sed accumsan nibh, ut cursus mi. Curabitur sodales metus 
+          nisl, a finibus mauris ultricies sit amet. Aliquam eu elit ac 
+          justo commodo rhoncus in a lorem. Nam at imperdiet nisi. 
+          Nulla cursus eu ligula vel lobortis. 
+      </p>
+      <div class="avatar">
+        <img src="static/images/avatar.png" alt="">
+      </div>
+        </div>
+        
+
+    </section>
+    <section id="roles">
+      <div class="roles1">
+        <div class="musicien">
+          <a href="{{ url_for('music') }}">
+            <h3>Musician</h3>
+          </a>
+          <a href="{{ url_for('music') }}">
+            <img src="static/images/music.jpg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="role2">
+        <div class="arranger">
+          <a href="{{ url_for('arranger') }}">
+            <h3>Arranger, Composer </h3>
+          </a>
+          <a href="{{ url_for('arranger') }}">
+            <img src="static/images/arranger.jpg" alt="">
+          </a>
+        </div>
+        <div class="bandleader">
+          <a href="{{ url_for('bandleader') }}">
+            <h3>Bandleader</h3>
+          </a>
+          <a href="{{ url_for('bandleader') }}">
+            <img src="static/images/bandleader.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="role3">
+      <div class="voiceover">
+        <a href="{{ url_for('voiceover') }}">
+          <h3>Voiceover</h3>
+        </a>
+        <a href="{{ url_for('voiceover') }}">
+          <img src="static/images/voiceover.jpg" alt="">
+        </a>
+
+      </div>
+    </div>
+        
+
+    </section>
+
+
+    <section class="contact" id="contact">
+      <div class="form-wrapper flex">
+        <h2>
+          Get In Touch
+        </h2>
+        <form>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" required />
+          <label for="message">Your Message:</label>
+          <input type="text" id="message" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <img src="static/images/contact.jpg" alt="contact" />
+    </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <footer>
+    <div class="footer-wrapper">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/yuriybuzilov" title="facebook-social-media">
+                    <img src="static/icons/facebook.svg" alt="twitter-social-media">
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/channel/UCDnUUjL0NMXzQBTMUKqLZCw" title="youtube-social-media">
+                    <img src="static/icons/youtube.svg" alt="youtube-social-media">
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#" title="instagram-social-media">
+                    <img src="static/icons/instagram.svg" alt="instagram-social-media">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+      <div class="slider"></div>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"
+      ></script>
+      <script src="static/app.js"></script>
+
+     </html>
+     
